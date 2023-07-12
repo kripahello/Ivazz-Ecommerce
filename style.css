@@ -3,12 +3,12 @@
   
 }
 
-body{
-  background-color: var(--medium-grey);
+a{
+  text-decoration: none;
 }
 
-li{
-  padding-left: 6px;
+body{
+  background-color: var(--medium-grey);
 }
 
 :root{
@@ -96,13 +96,66 @@ main .cover-picture span button{
   
 }
 
-.grid-container {
-  padding-top: 2rem;
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: var(--medium-grey);
+.article-best-selling{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width:25rem ;
+  padding: 1.5rem;
+  margin: 1rem;
+  justify-content: center;
+  text-align: center;
+  font-family: arial;
+  background-color: var(--off-white);
+}
+
+.article-best-selling .card img{
+  width:25rem;
+   height:25rem
+} 
+
+.card button {
+  background-color: var(--off-white);
+  border-color: var(--medium-grey);
+}
+
+.void-categories{
+  color: var(--off-white);
+  font: Arial, Helvetica, sans-serif;
+  font-size: 50px;
+  font-weight: 800;
+  text-align: center;
+  padding: 2rem;
+  
+}
+
+.article-categories{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  justify-content: center;
+}
+
+.article-categories div{
+   display: flex;
+   width: 10rem;
+   height: 10rem;
+   margin: 1rem;
+   align-items: center;
+   color: #F2F3F5;
+   background-color: var(--light-grey);  
+}
+
+.article-categories div span{
+  justify-content: center;
+  margin: 20%;
+  font-family: cursive;
+  font-size: x-large;
+}
 
 footer{
   position:fixed;
