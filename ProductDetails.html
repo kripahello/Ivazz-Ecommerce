@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./productDetails.css">
+    <title>Product Details</title>
+</head>
+<body>
+    <div class="product-details-card">
+        <div class="product-details-image">
+             <img src="./Images/fenty-blush.jpg" id="img-prod" alt="Denim Jeans">
+        </div>
+        <div>
+            <h1 id="name-prod">Maybelline Pink Shimmer</h1>
+            <p id="price">$19.99</p>
+            <p id="product-description">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <p><button>Add to Cart</button></p>
+        </div>
+    </div>
+   
+</body>
+</html>
+<script>
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const product = urlParams.get('product');
+const name = urlParams.get('name');
+
+if(product == 1){
+document.getElementById('img-prod').src='./Images/lakme-cc.avif';
+document.getElementById('name-prod').innerHTML=name;
+}else if (product == 2){
+    document.getElementById('img-prod').src='./Images/pink-shimmer-shadow.jpg';
+    document.getElementById('name-prod').innerHTML=name;
+}
+</script>

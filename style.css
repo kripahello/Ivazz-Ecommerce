@@ -1,110 +1,112 @@
 * {
   list-style: none;
-  
 }
 
-a{
+a {
   text-decoration: none;
+  color: #292c35;
 }
-
-body{
+a:hover {
+  text-decoration: none;
+  color: #292c35;
+}
+body {
   background-color: var(--medium-grey);
 }
 
-:root{
-  --dark-grey: #292C35;
-  --medium-grey:#999999;
-  --light-grey:#616161;
-  --yellow:#E09145;
-  --cream:#FCD9B8;
-  --off-white:#FAF9F6;
+:root {
+  --dark-grey: #292c35;
+  --medium-grey: #999999;
+  --light-grey: #616161;
+  --yellow: #e09145;
+  --dust-pink: #C1ADAE;
+  --off-white: #faf9f6;
 }
 
-.header-tip{
+.header-tip {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   background-color: var(--light-grey);
 }
 
-.header-tip > .logo-number{
+.header-tip > .logo-number {
   display: flex;
   flex-direction: row;
 }
 
-.header-tip > .shop-now{
+.header-tip > .shop-now {
   display: flex;
   flex-direction: row;
 }
 
-nav{
- background-color: var(--off-white);
- padding: .5rem 1rem;
- 
+nav {
+  background-color: var(--off-white);
+  padding: 0.5rem 1rem;
 }
 
-nav > ul{
+nav > ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-nav ul .nav-options{
+nav ul .nav-options {
   display: flex;
 }
 
 nav ul .nav-options li {
-  padding: 0 5px ;
+  padding: 0 5px;
 }
 
-nav ul li input{
+nav ul li input {
   border-radius: 10px;
   padding: 2px 6px;
 }
 
-main .cover-picture{
+main .cover-picture {
   background-image: url("./Images/home-cover-picture.jpg");
   width: 100%;
   height: 100vh;
 
-  object-fit:ccontain;
+  object-fit: ccontain;
 }
 
-main .cover-picture span{
-  margin:auto;
+main .cover-picture span {
+  margin: auto;
   color: white;
   font-size: 10rem;
   width: 50%;
 }
 
-main .cover-picture span button{
+main .cover-picture span button {
   color: var(--dark-grey);
   background: var(--off-white);
-  padding: 1.3rem 3rem;
   border: none;
-  display: block;
-  margin: 10px ;
+  font-size: large;
+  padding: 1rem;
+  display: inline-block;
+  
 }
 
-.void-our-products{
+.void-our-products {
   color: var(--off-white);
   font: Arial, Helvetica, sans-serif;
   font-size: 50px;
   font-weight: 800;
   text-align: center;
   padding: 2rem;
-  
 }
 
-.article-best-selling{
+.article-best-selling {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.card {
+.product-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  width:25rem ;
+  width: 25rem;
   padding: 1.5rem;
   margin: 1rem;
   justify-content: center;
@@ -113,51 +115,68 @@ main .cover-picture span button{
   background-color: var(--off-white);
 }
 
-.article-best-selling .card img{
-  width:25rem;
-   height:25rem
-} 
+.article-best-selling .product-card img {
+  width: 21rem;
+  height: 20rem;
+}
 
-.card button {
+.product-card button {
   background-color: var(--off-white);
   border-color: var(--medium-grey);
 }
 
-.void-categories{
+.void-categories {
   color: var(--off-white);
   font: Arial, Helvetica, sans-serif;
   font-size: 50px;
   font-weight: 800;
   text-align: center;
   padding: 2rem;
-  
 }
 
-.article-categories{
+.article-categories {
   display: flex;
   flex-wrap: wrap;
   padding: 2rem;
   justify-content: center;
 }
 
-.article-categories div{
-   display: flex;
-   width: 10rem;
-   height: 10rem;
-   margin: 1rem;
-   align-items: center;
-   color: #F2F3F5;
-   background-color: var(--light-grey);  
-}
-
-.article-categories div span{
+.article-categories div a {
+  display: flex;
+  width: 10rem;
+  height: 10rem;
+  margin: 1rem;
+  align-items: center;
+  color: #f2f3f5;
   justify-content: center;
-  margin: 20%;
   font-family: cursive;
   font-size: x-large;
+  background-color: var(--light-grey);
 }
 
 footer{
-  position:fixed;
-  bottom: 0;
+  display: flex;
+  padding-top: 2rem;
+  flex-direction: column;
+  background: var(--dust-pink);
+}
+
+.connect-with-us{
+  text-align: center;
+  font-family: cursive;
+}
+
+.col-2 i{
+  font-size:30px;
+} 
+
+.footer-grid-2 .row{
+  justify-content: center;
+  margin: 5px;
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.col-3 ul li{
+  text-align: center;
 }

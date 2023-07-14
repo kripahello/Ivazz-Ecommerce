@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Facebook Login</title>
+    <link rel="stylesheet" href="./sign.css" />
+    <script src="./logIn.js"></script>
+  </head>
+  <body>
+    <main class="center">
+      <form action="#hh" id="welcome">
+        <h1 id="headingWelcome">Welcome!!!</h1>
+        <input
+          onclick="signUp()"
+          id="login-input-first"
+          type="button"
+          value="Create New Account"
+        />
+        <input
+          onclick="signIn()"
+          type="button"
+          id="login-input-second"
+          value="Sign in"
+        />
+        <p id="dissapearingBtnLogIn"></p>
+      </form>
+
+      <form id="formCreate" action="index.html">
+        <h1 id="headingLogin">Create New Account</h1>
+        <input id="firstName" type="text" value="First Name" /><input
+          id="lastName"
+          type="text"
+          value="Last Name"
+        />
+        <input id="phoneNumber" type="text" value="Phone Number" />
+        <input id="email" type="text" value="Email Address" />
+        <input id="setPassword" type="text" value="Set Password" />
+        <button type="submit" id="signUpBtn">Sign Up</button>
+      </form>
+    </main>
+  </body>
+</html>
