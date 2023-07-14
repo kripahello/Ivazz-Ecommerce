@@ -6,10 +6,12 @@ a {
   text-decoration: none;
   color: #292c35;
 }
+
 a:hover {
   text-decoration: none;
   color: #292c35;
 }
+
 body {
   background-color: var(--medium-grey);
 }
@@ -19,12 +21,14 @@ body {
   --medium-grey: #999999;
   --light-grey: #616161;
   --yellow: #e09145;
-  --dust-pink: #C1ADAE;
+  --dust-pink: #c1adae;
   --off-white: #faf9f6;
 }
 
 .header-tip {
   display: flex;
+  flex-wrap: wrap;
+  height: 5vh;
   flex-direction: row;
   justify-content: space-evenly;
   background-color: var(--light-grey);
@@ -32,27 +36,43 @@ body {
 
 .header-tip > .logo-number {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
 .header-tip > .shop-now {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
 }
 
 nav {
   background-color: var(--off-white);
-  padding: 0.5rem 1rem;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 nav > ul {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
 }
 
-nav ul .nav-options {
+.home-logo-index {
   display: flex;
+  flex-wrap: wrap;
+}
+
+nav > ul .nav-options {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 nav ul .nav-options li {
@@ -67,26 +87,28 @@ nav ul li input {
 main .cover-picture {
   background-image: url("./Images/home-cover-picture.jpg");
   width: 100%;
-  height: 100vh;
-
-  object-fit: ccontain;
+  height: 85vh;
+  object-fit: contain; 
 }
 
-main .cover-picture span {
-  margin: auto;
-  color: white;
-  font-size: 10rem;
-  width: 50%;
+main .cover-picture div h1 {
+  font-size: 15rem;
 }
 
-main .cover-picture span button {
-  color: var(--dark-grey);
+.heading-veronica {
+  text-align: center;
+  color: var(--off-white);
+}
+
+main .cover-picture div .buy-now-btn {
+  text-align: center;
+}
+
+main .cover-picture div button {
   background: var(--off-white);
   border: none;
+  padding: 1.5rem;
   font-size: large;
-  padding: 1rem;
-  display: inline-block;
-  
 }
 
 .void-our-products {
@@ -154,29 +176,57 @@ main .cover-picture span button {
   background-color: var(--light-grey);
 }
 
-footer{
+footer {
   display: flex;
   padding-top: 2rem;
   flex-direction: column;
   background: var(--dust-pink);
 }
 
-.connect-with-us{
+.connect-with-us {
   text-align: center;
   font-family: cursive;
 }
 
-.col-2 i{
-  font-size:30px;
-} 
+.col-2 i {
+  font-size: 30px;
+}
 
-.footer-grid-2 .row{
+.footer-grid-2 .row {
   justify-content: center;
   margin: 5px;
   text-align: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
-.col-3 ul li{
+.col-3 ul li {
   text-align: center;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (min-width: 480px) {
+  main .cover-picture div h1 {
+    font-size: 12rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  main .cover-picture div h1 {
+    font-size: 15rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+  main .cover-picture div h1 {
+    font-size: 18rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+  main .cover-picture div h1 {
+    font-size: 15rem;
+  }
+}
+

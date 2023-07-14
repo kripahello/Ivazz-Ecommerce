@@ -14,24 +14,17 @@
         <div>
             <h1 id="name-prod">Maybelline Pink Shimmer</h1>
             <p id="price">$19.99</p>
-            <p id="product-description">Some text about the jeans. Super slim and comfy lorem ipsum lorem jeansum. Lorem jeamsun denim lorem jeansum.</p>
+            <Label>Color Options :</Label>
+            <select id="size" value="Color Options">
+                <option value="volvo">Pink</option>
+                <option value="saab">White</option>
+                <option value="opel">Rose</option>
+                <option value="audi">Red</option>
+            </select>
+            <p id="product-description">Maybelline Shimmer with creamy texture for the matt natural look.</p>
             <p><button>Add to Cart</button></p>
         </div>
     </div>
    
 </body>
 </html>
-<script>
-const queryString = window.location.search;
-const urlParams = new URLSearchParams(queryString);
-const product = urlParams.get('product');
-const name = urlParams.get('name');
-
-if(product == 1){
-document.getElementById('img-prod').src='./Images/lakme-cc.avif';
-document.getElementById('name-prod').innerHTML=name;
-}else if (product == 2){
-    document.getElementById('img-prod').src='./Images/pink-shimmer-shadow.jpg';
-    document.getElementById('name-prod').innerHTML=name;
-}
-</script>
