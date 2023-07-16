@@ -1,7 +1,66 @@
 body {
+  background-color: indianred;
+}
+
+main {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+}
+
+form {
+  display: flex;
+  margin: auto;
+  padding: 6rem 10rem;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  border: 4px solid #fef9f3;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput input {
+  padding: 0.25rem 2.5rem;
+  margin: 3px;
+}
+
+#formCreate {
+  display: none;
+}
+
+#formCreate span {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#formCreate span span {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+}
+
+#formCreate span span,
+input {
+  text-align: center;
+  padding: 3px;
+  color: black;
+  border-radius: 5px;
+}
+
+#formCreate span > input {
+  width: 98%;
+}
+
+/* 
+  body {
     background-color: khaki;
   }
-  
+
   main {
     width: 30%;
     background-color: aliceblue;
@@ -55,7 +114,7 @@ body {
     width: 20rem;
   }/*# sourceMappingURL=style.css.map */
 
-  #formCreate{
+/* #formCreate{
     display: none;
   }
 
@@ -63,4 +122,4 @@ body {
     background-color:black;
     color:white;
     padding: .5rem;
-  }
+  } */

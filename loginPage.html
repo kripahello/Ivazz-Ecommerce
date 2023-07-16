@@ -11,32 +11,36 @@
   <body>
     <main class="center">
       <form action="#hh" id="welcome">
-        <h1 id="headingWelcome">Welcome!!!</h1>
-        <input
+        <span> <h1 id="headingWelcome">Welcome!!!</h1></span>
+        <span class="formInput"><input
           onclick="signUp()"
           id="login-input-first"
           type="button"
           value="Create New Account"
-        />
+         />
         <input
           onclick="signIn()"
           type="button"
           id="login-input-second"
           value="Sign in"
-        />
-        <p id="dissapearingBtnLogIn"></p>
+        /></span>
+        <span><p id="dissapearingBtnLogIn"></p></span>
       </form>
 
       <form id="formCreate" action="index.html">
         <h1 id="headingLogin">Create New Account</h1>
-        <input id="firstName" type="text" value="First Name" /><input
-          id="lastName"
-          type="text"
-          value="Last Name"
-        />
-        <input id="phoneNumber" type="text" value="Phone Number" />
-        <input id="email" type="text" value="Email Address" />
-        <input id="setPassword" type="text" value="Set Password" />
+        <span>
+          <span>
+            <input id="firstName" type="text" value="First Name" /><input
+             id="lastName"
+             type="text"
+             value="Last Name"
+            />
+          </span>
+          <span><input id="phoneNumber" type="text" value="Phone Number" /></span>
+          <span><input id="email" type="text" value="Email Address" /></span>
+          <span><input id="setPassword" type="text" value="Set Password" /></span>
+        </span>
         <button type="submit" id="signUpBtn">Sign Up</button>
       </form>
     </main>
